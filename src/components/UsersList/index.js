@@ -7,7 +7,7 @@ const UsersList = () => {
     const [users, setUsers] = useState([]);
     const { isAuth } = useContext(AuthContext);
 
-    if (!isAuth) return <Redirect to="/login" />
+    if (!isAuth) return <Redirect to="/" />
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
     // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -35,5 +35,6 @@ const UsersList = () => {
     </Fragment>
   );
 }
+
  
 export default UsersList;

@@ -10,3 +10,8 @@
 .derecha{
     padding-left: 16cm;
 }
+
+.tipografia{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
+}
