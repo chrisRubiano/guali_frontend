@@ -1,8 +1,21 @@
+.fondoFooter {
+  background-color: #06D6A0;
+  width: 100%;
+  background-size: cover; 
+}
+
+.margenA{
+  margin-top: 15px;
+}
+
 .footer {
-    position: fixed;
-    text-align: center;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-  }
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+}

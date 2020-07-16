@@ -28,7 +28,7 @@ const UsersList = () => {
 
   return ( 
     <Fragment>
-      <h2>Lista de Usuarios</h2>
+      <h2>AQUI IRIA LO QUE MANDO CRISTIAN </h2>
       <ul>
   { users.map((user) => <li>{user.email}</li>) }
       </ul>
