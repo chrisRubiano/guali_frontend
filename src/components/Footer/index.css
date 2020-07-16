@@ -19,3 +19,8 @@
   width: 100%;
   padding: 10px;
 }
+
+.tipografia{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: normal;
+}

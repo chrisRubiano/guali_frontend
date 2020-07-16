@@ -33,42 +33,42 @@ const Home = () => {
   return (
     <React.Fragment>
       <div className="centrarDiv fondoColor">
-      <Form onSubmit={handleForm}>
-        <div className="tarjetagrande" style={{ maxWidth: 18 + 'rem' }}>
-          <FormGroup>
-          <div className="card-header centrartexto">Iniciar Sesión</div>
-            <Label className="margenA" >
-            <img src={user} alt="icon user" className="icono margenI margenD" />
+        <Form onSubmit={handleForm}>
+          <div className="tarjetagrande" style={{ maxWidth: 18 + 'rem' }}>
+            <FormGroup>
+              <div className="card-header centrartexto tipografia">Iniciar Sesión</div>
+              <Label className="margenA tipografia" >
+                <img src={user} alt="icon user" className="icono margenI margenD" />
             Correo Electronico
             </Label>
-            <Input
-              className="form-control margenI margenD"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              type="email"
-              name="email"
-              id="exampleEmail"
-              placeholder="Ingresa tu correo electrónico" />
-          </FormGroup>
-          <FormGroup>
-            <Label>
-            <img src={pass} alt="icon password" className="icono margenI margenD" /> 
+              <Input
+                className="form-control margenI margenD"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                type="email"
+                name="email"
+                id="exampleEmail"
+                placeholder="Ingresa tu correo electrónico" />
+            </FormGroup>
+            <FormGroup>
+              <Label className="tipografia">
+                <img src={pass} alt="icon password" className="icono margenI margenD" />
             Contraseña
             </Label>
-            <Input
-              className="form-control margenI margenD"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              type="password"
-              name="password"
-              id="examplePassword"
-              placeholder="Ingresa tu contraseña" />
-          </FormGroup>
-          <Button className="btn btn-primary boton">Ingresar</Button>
-        </div>
-      </Form>
-    <img src={logo} alt="logo guali" className="logo" />
-    </div>
+              <Input
+                className="form-control margenI margenD"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                type="password"
+                name="password"
+                id="examplePassword"
+                placeholder="Ingresa tu contraseña" />
+            </FormGroup>
+            <Button className="btn btn-primary boton tipografia">Ingresar</Button>
+          </div>
+        </Form>
+        <img src={logo} alt="logo guali" className="logo" />
+      </div>
     </React.Fragment >
   );
 }

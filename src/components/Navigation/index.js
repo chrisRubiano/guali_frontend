@@ -11,7 +11,7 @@ import {
   NavLink,
 } from 'reactstrap';
 import './index.css';
-import logo from '../../img/logo.png';
+import logoN from '../../img/logoN.png';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,15 +22,16 @@ const Navigation = () => {
   const publicNavbar = () => {
     return (
       <Navbar
-        className="navbar navbar-dark navColor"
+        className="navbar navbar-dark navColor tipografia"
         expand="md">
-        <img src={logo} alt="logo Guali" className="navbar-img"/>
-        <NavbarBrand tag={Link} to="/">Guali</NavbarBrand>
+        <NavbarBrand tag={Link} to="/" className="tipografia">
+          <img src={logoN} alt="logo Guali" className="navbar-img" />
+        </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink tag={Link} to="/signup">Regístrate</NavLink>
+              <NavLink tag={Link} to="/signup" className="tipografia">Regístrate</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
@@ -40,23 +41,23 @@ const Navigation = () => {
   const authNavbar = () => {
     return (
       <Navbar
-        className="navbar navbar-dark bg-dark"
+        className="navbar navbar-dark navColor tipografia"
         expand="md">
-        <img src={logo} alt="logo Guali" className="navbar-img"/>
-        <NavbarBrand tag={Link} to="/">¡Bienvenid@ {user.first_name} :D </NavbarBrand>
+        <img src={logoN} alt="logo Guali" className="navbar-img" />
+        <NavbarBrand tag={Link} to="#" className="tipografia">¡Bienvenid@ {user.first_name} :D!</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink tag={Link} to="/Historial">Historial</NavLink>
+              <NavLink tag={Link} to="/Historial" className="tipografia">Historial</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="#">Reportes</NavLink>
+              <NavLink tag={Link} to="#" className="tipografia">Reportes</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="#">Agregar un Ingreso</NavLink>
+              <NavLink tag={Link} to="#" className="tipografia">Agregar un Ingreso</NavLink>
             </NavItem>
-            <NavItem className="derecha">
+            <NavItem className="derecha tipografia">
               <NavLink tag={Link} to="/logout">Cerrar Sesión</NavLink>
             </NavItem>
           </Nav>

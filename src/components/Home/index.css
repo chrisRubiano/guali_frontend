@@ -43,3 +43,8 @@
 .centrartexto{
     text-align: center;
 }
+
+.tipografia{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
+}
