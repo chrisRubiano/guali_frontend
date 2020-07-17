@@ -8,10 +8,15 @@
 }
 
 .derecha{
-    padding-left: 16cm;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .tipografia{
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: normal;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+}
+
+.mar{
+    margin-right: 7px;
 }

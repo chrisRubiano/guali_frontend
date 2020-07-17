@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { AuthContext } from '../../contexts/AuthContext';
+import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 import {
   Button,
@@ -17,6 +18,7 @@ const Home = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const { loginUser } = useContext(AuthContext);
+  const history = useHistory();
 
   const handleForm = async (e) => {
     e.preventDefault();
@@ -26,13 +28,14 @@ const Home = () => {
       const res = await axios.post(LOGIN_URI, jsonSend);
       loginUser(res.data.token);
       alert('Successful login!');
+      history.push('./Balance');
     } catch (error) {
       alert('Error on login');
     }
   };
   return (
     <React.Fragment>
-      <div className="centrarDiv fondoColor">
+      <div className="centrarDiv bColor">
         <Form onSubmit={handleForm}>
           <div className="tarjetagrande" style={{ maxWidth: 18 + 'rem' }}>
             <FormGroup>

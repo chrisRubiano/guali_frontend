@@ -31,7 +31,7 @@ const Navigation = () => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink tag={Link} to="/signup" className="tipografia">Regístrate</NavLink>
+              <NavLink tag={Link} to="/signup" style={{ color: "white" }} className="tipografia">Regístrate</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
@@ -44,21 +44,21 @@ const Navigation = () => {
         className="navbar navbar-dark navColor tipografia"
         expand="md">
         <img src={logoN} alt="logo Guali" className="navbar-img" />
-        <NavbarBrand tag={Link} to="#" className="tipografia">¡Bienvenid@ {user.first_name} :D!</NavbarBrand>
+        <NavbarBrand tag={Link} to="#" className="tipografia" style={{ backgroundColor: "#EF476F"}} >¡Bienvenid@ {user.first_name} :D!</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink tag={Link} to="/Historial" className="tipografia">Historial</NavLink>
+              <NavLink tag={Link} to="/Balance" style={{ color: "white"}} className="mar tipografia">Balance</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="#" className="tipografia">Reportes</NavLink>
+              <NavLink tag={Link} to="#" style={{ color: "white" }} className="mar tipografia">Reportes</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="#" className="tipografia">Agregar un Ingreso</NavLink>
+              <NavLink tag={Link} to="#" style={{ color: "white"}} className="mar tipografia">Agregar un Ingreso</NavLink>
             </NavItem>
-            <NavItem className="derecha tipografia">
-              <NavLink tag={Link} to="/logout">Cerrar Sesión</NavLink>
+            <NavItem>
+              <NavLink tag={Link} to="/logout" style={{ color: "white" }} className="mar derecha tipografia">Cerrar Sesión</NavLink>
             </NavItem>
           </Nav>
         </Collapse>

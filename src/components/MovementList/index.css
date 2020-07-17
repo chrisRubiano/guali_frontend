@@ -1,0 +1,32 @@
+.tipografia{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
+}
+
+.bColor{
+    background-color: #FFFDF6;
+}
+
+.sitio{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sizeText{
+    font-size: 35px;
+    margin-top: 35px;
+    padding-top: 35px;
+}
+
+.moverB{
+    padding-top: 25px;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+
+.margenLista{
+    margin-left: 10%;
+}
