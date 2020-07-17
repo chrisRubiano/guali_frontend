@@ -5,7 +5,7 @@ import { Route } from 'react-router-dom';
 import Home from './components/Home';
 import Logout from './components/Logout';
 import Signup from './components/Signup';
-import UsersList from './components/UsersList';
+import MovementList from './components/MovementList';
 
 export default
   <React.Fragment>
@@ -19,7 +19,7 @@ export default
       exact path="/signup"
       component={ Signup } />
     <Route
-      exact path="/Historial"
-      component={ UsersList } />
+      exact path="/Balance"
+      component={ MovementList } />
   </React.Fragment>
 ;
