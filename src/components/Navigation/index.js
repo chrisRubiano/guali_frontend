@@ -22,7 +22,7 @@ const Navigation = () => {
   const publicNavbar = () => {
     return (
       <Navbar
-        className="navbar navbar-dark navColor tipografia"
+        className="navbar navbar-dark navColor tipografia tGrande"
         expand="md">
         <NavbarBrand tag={Link} to="/" className="tipografia">
           <img src={logoN} alt="logo Guali" className="navbar-img" />
@@ -41,7 +41,7 @@ const Navigation = () => {
   const authNavbar = () => {
     return (
       <Navbar
-        className="navbar navbar-dark navColor tipografia"
+        className="navbar navbar-dark navColor tipografia tGrande"
         expand="md">
         <img src={logoN} alt="logo Guali" className="navbar-img" />
         <NavbarBrand tag={Link} to="#" className="tipografia" style={{ backgroundColor: "#EF476F"}} >¡Bienvenid@ {user.first_name} :D!</NavbarBrand>

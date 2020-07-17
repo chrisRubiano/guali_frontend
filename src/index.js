@@ -6,7 +6,7 @@ import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <div className=" bColorAll ">
+    <div className="lavainaesa  bColorAll">
      <App />
     </div>
   </React.StrictMode>,
