@@ -1,3 +1,4 @@
+
 import React, { useState, useContext } from 'react';
 import { AuthContext } from '../../contexts/AuthContext';
 import { Link } from 'react-router-dom';
@@ -44,18 +45,18 @@ const Navigation = () => {
         className="navbar navbar-dark navColor tipografia tGrande"
         expand="md">
         <img src={logoN} alt="logo Guali" className="navbar-img" />
-        <NavbarBrand tag={Link} to="#" className="tipografia" style={{ backgroundColor: "#EF476F"}} >¡Bienvenid@ {user.first_name} :D!</NavbarBrand>
+        <NavbarBrand tag={Link} to="/" className="tipografia" style={{ backgroundColor: "#EF476F"}} >¡Bienvenid@ {user.first_name} :D!</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink tag={Link} to="/Balance" style={{ color: "white"}} className="mar tipografia">Balance</NavLink>
+              <NavLink tag={Link} to="/balance" style={{ color: "white"}} className="mar tipografia">Balance</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="#" style={{ color: "white" }} className="mar tipografia">Reportes</NavLink>
+              <NavLink tag={Link} to="/ingreso" style={{ color: "white"}} className="mar tipografia">Agregar un Ingreso</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="#" style={{ color: "white"}} className="mar tipografia">Agregar un Ingreso</NavLink>
+              <NavLink tag={Link} to="/gasto" style={{ color: "white"}} className="mar tipografia">Agregar un Gasto</NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to="/logout" style={{ color: "white" }} className="mar derecha tipografia">Cerrar Sesión</NavLink>
