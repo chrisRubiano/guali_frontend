@@ -6,20 +6,28 @@ import Home from './components/Home';
 import Logout from './components/Logout';
 import Signup from './components/Signup';
 import MovementList from './components/MovementList';
+import AddSpending from './components/AddSpending';
+import AddIncome from './components/AddIncome';
 
 export default
   <React.Fragment>
     <Route
       exact path="/"
-      component={ Home } />
+      component={Home} />
     <Route
       exact path="/logout"
-      component={ Logout } />
+      component={Logout} />
     <Route
       exact path="/signup"
-      component={ Signup } />
+      component={Signup} />
     <Route
-      exact path="/Balance"
-      component={ MovementList } />
+      exact path="/balance"
+      component={MovementList} />
+    <Route
+      exact path="/gasto"
+      component={AddSpending} />
+    <Route
+      exact path="/ingreso"
+      component={AddIncome} />
   </React.Fragment>
-;
+  ;
