@@ -59,8 +59,8 @@ const MovementList = () => {
               <div className="sitio">
                 <div className="tipografia alinearC">
                   {movement.isExpense
-                    ? <div className="gasto">${movement.amount}()</div>
-                    : <div className="ingreso">${movement.amount}()</div>
+                    ? <div className="gasto">${movement.amount}</div>
+                    : <div className="ingreso">${movement.amount}</div>
                   }
                 </div>
                 <div className="tipografia alinearC">
