@@ -9,7 +9,13 @@
 
 .sitio{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+}
+.sitioN{
+    display: flex;
+    justify-content: space-between;
 }
 
 .sizeText{
@@ -30,3 +36,26 @@
 .margenLista{
     margin-left: 10%;
 }
+
+.alinearC{
+    text-align: center;
+}
+
+.fCategoria{
+    background-color: #FFD166;
+    padding: 0.4rem;
+    border-radius: 2px;
+}
+
+.sitio:last-of-type{
+    margin-bottom: 4rem;
+}
+
+.ingreso{
+background-color: #06D6A0;
+}
+
+.gasto{
+background-color: #F25F5C;
+}
+
