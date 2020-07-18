@@ -11,10 +11,10 @@ import './index.css';
 const MovementList = () => {
   const [users, setUsers] = useState([]);
   const [movement, setMovement] = useState([]);
-  const  idUser  = '5f0f9d12fd79551ca42d8a25';
+  const idUser = '5f0f9d12fd79551ca42d8a25';
   const { isAuth } = useContext(AuthContext);
   const history = useHistory();
-  
+
   if (!isAuth) return <Redirect to="/" />
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -36,13 +36,13 @@ const MovementList = () => {
   return (
     <React.Fragment>
       <div className="bColor">
-        <Form className="sitio">
-          <FormGroup className="sitio" >
+        <Form className="sitioN">
+          <FormGroup className="sitioN" >
             <div className="tipografia sizeText">
-              Balance Actual: 
+              Balance Actual:
             </div>
             <div className="tipografia sizeText" style={{ color: "#06D6A0" }}>
-              +12620.00
+              +$12620.00
             </div>
           </FormGroup>
         </Form>
@@ -55,15 +55,25 @@ const MovementList = () => {
         </Form>
         <Form>
           <FormGroup className="margenLista">
-            <ul>
-              {users.map((user) => <li>{user.email}</li>)}
-              {movement.map((movement) => <li>
-                {movement.amount}
-                {movement.title}
-                {movement.category}
-                {movement.date}
-              </li>)}
-            </ul>
+            {movement.map((movement) =>
+              <div className="sitio">
+                <div className="tipografia alinearC">
+                  {movement.isExpense
+                    ? <div className="gasto">${movement.amount}()</div>
+                    : <div className="ingreso">${movement.amount}()</div>
+                  }
+                </div>
+                <div className="tipografia alinearC">
+                  {movement.title}
+                </div>
+                <div className="tipografia fCategoria alinearC">
+                  {movement.category}
+                </div>
+                <div className="tipografia alinearC">
+                  {movement.date}
+                </div>
+              </div>
+            )}
           </FormGroup>
         </Form>
       </div>

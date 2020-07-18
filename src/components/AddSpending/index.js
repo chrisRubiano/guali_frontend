@@ -12,7 +12,8 @@ import {
 
 const AddSpending = () => {
   const { isAuth } = useContext(AuthContext);
-  const  idUser  = '5f0f9d12fd79551ca42d8a25';
+  const idUser = isAuth.idUser;
+  // const  idUser  = '5f0f9d12fd79551ca42d8a25';
   const [amount, setAmount] = useState("");
   const [title, setTitle] = useState("");
   const [category, setCategory] = useState("");
